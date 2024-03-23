@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <title>EMEDS.com: Indian Pharmacy</title>
+        <link rel="stylesheet" href="./styles/index.css">
+        <link rel="stylesheet" href="./styles/dropdown.css">
+        <link rel="stylesheet" href="./styles/partner.css">
+        <link rel="stylesheet" href="./styles/profile.css">
+        <link rel="stylesheet" href="./styles/product.css">
+        <script src="https://kit.fontawesome.com/0a03bfd4cc.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <div id="first-nav" class="header-show">
+        <div>
+            <a href="./index.html">
+            <img class="cursor"  src="https://github.com/Ujjwalmittal03/LOGO.git" alt="EMEDS logo">
+           
+            </a> 
+        </div>
+        <div>
+            <div>
+                <div><p id="popup-box">Deliver to 805104<i class="fa-solid fa-angle-down"></i>
+                    <div id="box">
+                        <div  class="pincode_content">
+                            <div id="saved_loaction">
+                                <h4 class="title">Where do you want to deliver ?</h4>
+                                <p id="delivery_txt">Get access to your Address,Order,and Wishlist</p>
+                                <div class="clearfix"></div>
+                                <button type="button" class="signin_btn">sign in to see your location</button>
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper" id="saved_addresses"></div>
+                                </div>
+                            </div>
+                    
+                            <div class="clearfix"></div>
+                            <div id="delivery_details">
+                               <input placeholder="Enter Pincode" id="input" type="number"  /> <br>
+                                <span>Select pinocde to see product availability.</span>
+                            </div>
+                          
+                        </div>
+                    </div></p>
+             </div>
+            </div>
+            <div>
+                <input onchange="searchDeta()" id="Searched" type="text" placeholder="Search for medicine & wellness Products....">
+            </div>
+        </div>
+        <div><i class="fa-solid fa-upload"></i>Upload</div>
+        <div class="cursor" onclick="window.location.href='./cart/cart.html'"><i class="fa-solid fa-cart-arrow-down"></i></i>Cart</div>
+        <div class="cursor" onclick="window.location.href='./profile/profile.html'" id="userName"><i class="fa-solid fa-address-card"></i>
+            <p>Profile</p>
+            <p>Sign Out</p>
+        </div>
+        <div id="profile"><i class="fa-solid fa-address-card"></i>Sign in / Sign up</div>
+    </div>
+   <div id="header">
+    <div id="second-nav">
+        <div class="cursor"><div><i class="fa-solid fa-prescription-bottle-medical"></i></div><p onclick="DetaSort(ele='diabetes')">Medicine</p>
+         </div>
+        <div class="cursor" ><div><i class="fa-solid fa-spa"></i></div><p onclick="DetaSort(ele='ayush')">Wellness</p></div>
+        <div class="cursor" ><div><i class="fa-solid fa-vials"></i></div><p onclick="DetaSort(ele='deveces')">Lab Test</p></div>
+        <div class="cursor" ><div><i class="fa-solid fa-face-smile"></i></div><p onclick="DetaSort(ele='eyewear')">Beauty</p></div>
+        <div class="cursor" ><div><i class="fa-solid fa-book-medical"></i></div><p onclick="DetaSort(ele='covid')">Health Corner</p></div>
+   </div>
+</div>
+
+   
+   <div id="third-nav">
+       <p class="cursor" onclick="DetaSort(ele='covid')">COVID Essentials</p>
+       <p class="cursor"  onclick="DetaSort(ele='diabetes')">Diabetes</p>
+       <p class="cursor"  onclick="DetaSort(ele='eyewear')">Eyewear</p>
+       <p  class="cursor" onclick="DetaSort(ele='ayush')">Ayush</p>
+       <p  class="cursor" onclick="DetaSort(ele='fitness')">Fitness</p>
+       <p  class="cursor" onclick="DetaSort(ele='mom')" >Mom & Baby</p>
+       <p class="cursor" onclick="DetaSort(ele='devices')">Devices</p>
+       <p class="cursor" onclick="DetaSort(ele='surgicals')">Surgicals</p>
+       <p class="cursor" onclick="DetaSort(ele='sexual')">Sexual Wellness</p>
+       <p class="cursor" onclick="DetaSort(ele='treatments')">Treatments</p>
+   </div>
+   
+
+
+   <div id="main-slide">
+    <div class="slide">
+        <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1641829832_Homebvbbbb.jpg" alt="img">
+     </div>
+    <div class="slide">
+        <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1643089019_Web_Banner_1680x320pxl.jpg" alt="img">
+     </div>
+    <div class="slide">
+        <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1643645501_Home_Banner741.jpg" alt="img">
+     </div>
+    <div class="slide">
+        <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1643645870_Home_Bannerzdfsf.jpg" alt="img">
+     </div> 
+   </div>
+
+
+   <div id="below-main-slide">
+       <div class="under-div">
+           <div class="cursor" onclick="DetaSort(ele='covid')"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7csvPWMdfAHEAnhIRTdJKCK5SPK4cHfskow&usqp=CAU" alt="firstjpg"></div>
+            <div>
+                <h1>Order Medicine</h1>
+            <p>Save Up to 25% off</p>
+            </div>
+            <div><i class="fa-solid fa-angle-right"></i></div>
+    </div>
+       <div class="under-div">
+           <div class="cursor"  onclick="DetaSort(ele='eyewear')"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7csvPWMdfAHEAnhIRTdJKCK5SPK4cHfskow&usqp=CAU" alt="second"></div>
+           <div>
+               <h1>Beauty</h1>
+               <p>Save Up to 25% off</p>
+            </div>
+           <div><i class="fa-solid fa-angle-right"></i></div>
+       </div>
+       <div class="under-div">
+           <div class="cursor" onclick="DetaSort(ele='ayush')"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7csvPWMdfAHEAnhIRTdJKCK5SPK4cHfskow&usqp=CAU" alt="thirt jpg"></div>
+           <div>   
+               <h1>Wellness</h1>
+               <p>Save Up to 25% off</p>
+            </div>
+           <div><i class="fa-solid fa-angle-right"></i></div>
+       </div>
+   </div>
+
+<div id="payment-partner">
+<div>
+    <div>
+        <h1>Payment Partner Offers</h1>
+    </div>
+    <div>
+        <P>View All</P>
+    </div>
+</div>
+<div id="partner-offer">
+    <section class="partner">
+        <!-- <h2 class="partner-category">Payment Partner Offers</h2> -->
+        <button class="pre-btn"><img src="https://raw.githubusercontent.com/thisbeben/Hiking-Website/main/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="https://raw.githubusercontent.com/thisbeben/Hiking-Website/main/arrow.png" alt=""></button>
+        <div class="partner-container">
+            <div class="partner-card">
+                <div class="partner-image">
+                    <img src="https://www.netmeds.com/images/cms/offers/1634671066_Mobikwik_logo.png" class="product-thumb" alt="">
+                </div>
+                <div class="partner-info">
+                    <p class="product-brand">Get max. Rs. 1000 assured Mobikwik..</p>
+                    <p class="product-short-description">Get “Assured MobiKwik Cashback” between max. Rs. 1000 and .....</p>
+                </div>
+            </div>
+            <div class="partner-card">
+                <div class="partner-image">
+                    <img src="https://www.netmeds.com/images/cms/offers/1634671066_Mobikwik_logo.png" class="product-thumb" alt="">
+                </div>
+                <div class="partner-info">
+                    <p class="product-brand">Get max. Rs. 1000 assured Mobikwik..</p>
+                    <p class="product-short-description">Get “Assured MobiKwik Cashback” between max. Rs. 1000 and .....</p>
+                </div>
+            </div>
+            <div class="partner-card">
+                <div class="partner-image">
+                    <img src="https://www.netmeds.com/images/cms/offers/1634671066_Mobikwik_logo.png" class="product-thumb" alt="">
+                </div>
+                <div class="partner-info">
+                    <p class="product-brand">Get max. Rs. 1000 assured Mobikwik ..</p>
+                    <p class="product-short-description">Get “Assured MobiKwik Cashback” between max. Rs. 1000 and .....</p>
+                </div>
+            </div>
+            <div class="partner-card">
+                <div class="partner-image">
+                    <img src="https://www.netmeds.com/images/cms/offers/1634671066_Mobikwik_logo.png" class="product-thumb" alt="">
+                </div>
+                <div class="partner-info">
+                    <p class="product-brand">Get max. Rs. 1000 assured Mobikwik..</p>
+                    <p class="product-short-description">Get “Assured MobiKwik Cashback” between max. Rs. 1000 and .....</p>
+                </div>
+            </div>
+            <div class="partner-card">
+                <div class="partner-image">
+                    <img src="https://www.netmeds.com/images/cms/offers/1634671066_Mobikwik_logo.png" class="product-thumb" alt="">
+                </div>
+                <div class="partner-info">
+                    <p class="product-brand">Get max. Rs. 1000 assured Mobikwik..</p>
+                    <p class="product-short-description">Get “Assured MobiKwik Cashback” between max. Rs. 1000 and .....</p>
+                </div>
+            </div>
+            <div class="partner-card">
+                <div class="partner-image">
+                    <img src="https://www.netmeds.com/images/cms/offers/1634671066_Mobikwik_logo.png" class="product-thumb" alt="">
+                </div>
+                <div class="partner-info">
+                    <p class="product-brand">Get max. Rs. 1000 assured Mobikwik..</p>
+                    <p class="product-short-description">Get “Assured MobiKwik Cashback” between max. Rs. 1000 and .....</p>
+                </div>
+            </div>
+            <div class="partner-card">
+                <div class="partner-image">
+                    <img src="https://www.netmeds.com/images/cms/offers/1634671066_Mobikwik_logo.png" class="product-thumb" alt="">
+                </div>
+                <div class="partner-info">
+                    <p class="product-brand">Get max. Rs. 1000 assured Mobikwik..</p>
+                    <p class="product-short-description">Get “Assured MobiKwik Cashback” between max. Rs. 1000 and .....</p>
+                </div>
+            </div>
+            <div class="partner-card">
+                <div class="partner-image">
+                    <img src="https://www.netmeds.com/images/cms/offers/1634671066_Mobikwik_logo.png" class="product-thumb" alt="">
+                </div>
+                <div class="partner-info">
+                    <p class="product-brand">Get max. Rs. 1000 assured Mobikwik..</p>
+                    <p class="product-short-description">Get “Assured MobiKwik Cashback” between max. Rs. 1000 and .....</p>
+                </div>
+            </div>
+             <div class="partner-card">
+                <div class="partner-image">
+                    <img src="https://www.netmeds.com/images/cms/offers/1634671066_Mobikwik_logo.png" class="product-thumb" alt="">
+                </div>
+                <div class="partner-info">
+                    <p class="product-brand">Get max. Rs. 1000 assured Mobikwik..</p>
+                    <p class="product-short-description">Get “Assured MobiKwik Cashback” between max. Rs. 1000 and .....</p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    
+</div>
+    <div id="orders">
+        <div>
+            <div id="textformat">
+                <h1>Previous Orders</h1>
+                <p>Your previously ordered products</p>
+                <p>View Orders<i class="fa-solid fa-angle-right"></i></p>
+            </div>
+            <div>
+                <img src="https://cdn3.vectorstock.com/i/1000x1000/35/52/placeholder-rgb-color-icon-vector-32173552.jpg" alt="">
+            </div>
+        </div>
+        <div>
+            <div>
+                <h1>Beauty Products</h1>
+                <p style="color:green">Save Upto 40% off</p>
+                <button class="cursor"  onclick="DetaSort(ele='eyewear')">Expoler Beauty</button>
+            </div>
+            <div><img src="https://cdn3.vectorstock.com/i/1000x1000/35/52/placeholder-rgb-color-icon-vector-32173552.jpg" alt=""></div>
+        </div>
+    </div>
+</div>
+   <!-- trending today working area -->
+   <div id="sliderpart">
+    <section class="product"> 
+      <h2 class="product-category">Trending Today</h2>
+      <button class="pre-btn"><img src="https://raw.githubusercontent.com/thisbeben/Hiking-Website/main/arrow.png" alt=""></button>
+      <button class="nxt-btn"><img src="https://raw.githubusercontent.com/thisbeben/Hiking-Website/main/arrow.png" alt=""></button>
+      <div class="product-container">
+          <div class="health-card">
+              <div class="Advice-image">
+                  <img class="cursor" onclick="DetaSort(ele='mom')" src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1645553910_Sheneed-netmed-banner--1-436-px-224-px.jpg-change.jpg" class="advice-thumb" alt="">
+              </div>
+              
+          </div>
+          <div class="health-card">
+            <div class="Advice-image">
+                <img class="cursor" onclick="DetaSort(ele='mom')" src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1645554630_Instant-436x224_Web.png" class="advice-thumb" alt="">
+            </div>
+            
+        </div>
+        <div class="health-card">
+            <div class="Advice-image">
+                <img class="cursor" onclick="DetaSort(ele='mom')"  src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1645035891_Cenvitan-home-page-mini-436-px-224-px.jpg" class="advice-thumb" alt="">
+            </div>
+            
+        </div>
+        <div class="health-card">
+            <div class="Advice-image">
+                <img class="cursor" onclick="DetaSort(ele='mom')" src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1643047630_Web_Banner_436x244pxl.jpg" class="advice-thumb" alt="">
+            </div>
+            
+        </div>
+        <div class="health-card">
+            <div class="Advice-image">
+                <img class="cursor" onclick="DetaSort(ele='mom')"  src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1645013312_Ambitech_web.jpg" class="advice-thumb" alt="">
+            </div>
+            
+        </div>
+
+  </div>
+    </section>   
+</div>
+
+
+
+   <!-- end trending trending working area -->
+  
+
+   <!-- shop by category working area -->
+
+   <div id="sliderpart">
+    <section class="product"> 
+      <h2 class="product-category">Shop by Category</h2>
+      <button class="pre-btn"><img src="https://raw.githubusercontent.com/thisbeben/Hiking-Website/main/arrow.png" alt=""></button>
+      <button class="nxt-btn"><img src="https://raw.githubusercontent.com/thisbeben/Hiking-Website/main/arrow.png" alt=""></button>
+      <div class="product-container">
+          <div class="product-card">
+              <div class="product-image">
+                  <img class="cursor" onclick="DetaSort(ele='covid')" src="https://www.netmeds.com/images/category/3055/thumb/covid-essentials_0.jpg" class="product-thumb" alt="">
+              </div>
+              <div class="product-info">
+                  <h2 class="product-brand">Covid Essentials</h2>
+                  
+              </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+                <img class="cursor" onclick="DetaSort(ele='ayush')" src="https://www.netmeds.com/images/category/481/thumb/ayush_0.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Ayush</h2>
+                
+            </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+              <img class="cursor" onclick="DetaSort(ele='mom')" src="https://www.netmeds.com/images/category/v1/3085/thumb/mom_baby_0.jpg" class="product-thumb" alt="">
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">Mom & Baby</h2>
+              
+          </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+            <img class="cursor" onclick="DetaSort(ele='devices')" src="https://www.netmeds.com/images/category/665/thumb/devices_0.jpg" class="product-thumb" alt="">
+        </div>
+        <div class="product-info">
+            <h2 class="product-brand">Device</h2>
+            
+        </div>
+    </div>
+    <div class="product-card">
+      <div class="product-image">
+          <img class="cursor" onclick="DetaSort(ele='fitness')" src="https://www.netmeds.com/images/category/500/thumb/fitness_0.jpg" class="product-thumb" alt="">
+      </div>
+      <div class="product-info">
+          <h2 class="product-brand">Fitness</h2>
+          
+      </div>
+  </div>
+      </div>
+  </section>
+  </div>
+
+   <!-- end -->
+
+   <!-- top brands -->
+
+   <div id="sliderpart">
+    <section class="product"> 
+      <h2 class="product-category">Top Brand</h2>
+      <button class="pre-btn"><img src="arrow.png" alt=""></button>
+      <button class="nxt-btn"><img src="arrow.png" alt=""></button>
+      <div class="product-container">
+          <div class="product-card">
+              <div class="product-image">
+                  <img class="cursor" onclick="DetaSort(ele='ayush')" src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/hashmi.jpg?v=8" class="product-thumb" alt="">
+              </div>
+              <div class="product-info">
+                  <h2 class="product-brand">Hashmi</h2>
+                  <p class="product-short-description">Flat 50% off</p>
+                  
+              </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+                <img class="cursor" onclick="DetaSort(ele='ayush')" src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/skin-elements.jpg?v=8" class="product-thumb" alt="">
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Skin Elements</h2>
+                <p class="product-short-description">Flat 50% off</p>
+                
+            </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+              <img class="cursor" onclick="DetaSort(ele='ayush')" src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/dr-vaidyas.jpg?v=8" class="product-thumb" alt="">
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">Dr-Vaidyas</h2>
+              <p class="product-short-description">Flat 50% off</p>
+              
+          </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+            <img class="cursor" onclick="DetaSort(ele='ayush')" src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/dabur.jpg?v=8" class="product-thumb" alt="">
+        </div>
+        <div class="product-info">
+            <h2 class="product-brand">Dabur</h2>
+            <p class="product-short-description">Flat 30% off</p>
+            
+        </div>
+    </div>
+    <div class="product-card">
+      <div class="product-image">
+          <img class="cursor" onclick="DetaSort(ele='ayush')" src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/accu-chek.jpg?v=8" class="product-thumb" alt="">
+      </div>
+      <div class="product-info">
+          <h2 class="product-brand">Accu-Chek</h2>
+          <p class="product-short-description">Flat 25% off</p>
+          
+      </div>
+  </div>      
+      </div>
+  </section>
+  </div>
+
+   <!-- end -->
+
+   <!-- netmeds membersship tab -->
+   <div class="netmeds-member">
+    <div><img src="https://cdn3.vectorstock.com/i/1000x1000/35/52/placeholder-rgb-color-icon-vector-32173552.jpg" alt=""></div>
+    <div>
+        <h1>Netmeds First Membership</h1>
+        <li>Get special discounts and offers on Netmeds services.</li>
+        <li>Get 2.5% NMS Cash on all orders.</li>
+    </div>
+    <div>
+        Starting Price 290
+    </div>
+    <div>
+        <button>Expoler Plans</button>
+    </div>
+    </div>
+
+   <!-- end -->
+
+
+
+   <!-- Categories in Focus -->
+
+   <div id="sliderpart">
+    <section class="product"> 
+      <h2 class="product-category">Categories in Focus</h2>
+      <button class="pre-btn"><img src="https://raw.githubusercontent.com/thisbeben/Hiking-Website/main/arrow.png" alt=""></button>
+      <button class="nxt-btn"><img src="https://raw.githubusercontent.com/thisbeben/Hiking-Website/main/arrow.png" alt=""></button>
+      <div class="product-container">
+          <div class="product-card">
+              <div class="product-image">
+                  <img class="cursor" onclick="DetaSort(ele='sexual')" src="https://www.netmeds.com/images/category/3087/thumb/feminine_hygeine_0.jpg" class="product-thumb" alt="">
+              </div>
+              <div class="product-info">
+                  <h2 class="product-brand">Feminie Hygiene</h2>
+                  <p class="product-short-description">Flat 50% off</p>
+                  
+              </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+                <img class="cursor" onclick="DetaSort(ele='fitness')" src="https://www.netmeds.com/images/category/v1/525/thumb/body_care_200.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Body Care</h2>
+                <p class="product-short-description">Flat 60% off</p>
+                
+            </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+              <img class="cursor" onclick="DetaSort(ele='ayush')" src="https://www.netmeds.com/images/category/482/thumb/ayurvedic_0.jpg" class="product-thumb" alt="">
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">Ayurvedic</h2>
+              <p class="product-short-description">Flat 50% off</p>
+              
+          </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+            <img  class="cursor" onclick="DetaSort(ele='fitness')" src="https://www.netmeds.com/images/category/676/thumb/orthopaedics_0.jpg" class="product-thumb" alt="">
+        </div>
+        <div class="product-info">
+            <h2 class="product-brand">Orthopaedics</h2>
+            <p class="product-short-description">Flat 50% off</p>
+            
+        </div>
+    </div>
+    <div class="product-card">
+      <div class="product-image">
+          <img class="cursor" onclick="DetaSort(ele='fitness')" src="https://www.netmeds.com/images/category/3216/thumb/sports_supplements_0.jpg" class="product-thumb" alt="">
+      </div>
+      <div class="product-info">
+          <h2 class="product-brand">Sports Supplements</h2>
+          <p class="product-short-description">Flat 50% off</p>
+          
+      </div>
+  </div>
+  <div class="product-card">
+    <div class="product-image">
+        <img class="cursor" onclick="DetaSort(ele='covid')" src="https://www.netmeds.com/images/category/3061/thumb/immunity_booster_0.jpg" class="product-thumb" alt="">
+    </div>
+    <div class="product-info">
+        <h2 class="product-brand">Immunity Booster</h2>
+        <p class="product-short-description">Flat 50% off</p>
+        
+    </div>
+  </div>
+          
+      </div>
+  </section>
+  </div>
+
+   <!-- end -->
+
+
+
+
+   <!-- Explore Beauty -->
+   <div id="sliderpart">
+    <section class="product"> 
+      <h2 class="product-category"> Explore Beauty</h2>
+      <button class="pre-btn"><img src="https://raw.githubusercontent.com/thisbeben/Hiking-Website/main/arrow.png" alt=""></button>
+      <button class="nxt-btn"><img src="https://raw.githubusercontent.com/thisbeben/Hiking-Website/main/arrow.png" alt=""></button>
+      <div class="product-container">
+          <div class="product-card">
+              <div class="product-image">
+                  <img class="cursor"  onclick="DetaSort(ele='eyewear')" src="https://www.netmeds.com/images/category/3505/thumb/facial_kits_0.jpg" class="product-thumb" alt="">
+              </div>
+              <div class="product-info">
+                  <h2 class="product-brand">Facial Kits</h2>
+                  <p class="product-short-description">Flat 50% off</p>
+                  
+              </div>
+          </div>
+    <div class="product-card">
+      <div class="product-image">
+          <img class="cursor"  onclick="DetaSort(ele='eyewear')" src="https://www.netmeds.com/images/category/v1/560/thumb/lip_care_200.jpg" class="product-thumb" alt="">
+      </div>
+      <div class="product-info">
+          <h2 class="product-brand">Lip Care
+          </h2>
+          <p class="product-short-description">Flat 50% off</p>
+          
+      </div>
+  </div>
+  <div class="product-card">
+    <div class="product-image">
+        <img class="cursor"  onclick="DetaSort(ele='eyewear')" src="https://www.netmeds.com/images/category/v1/525/thumb/body_care_200.jpg" class="product-thumb" alt="">
+    </div>
+    <div class="product-info">
+        <h2 class="product-brand">Body Care</h2>
+        <p class="product-short-description">Flat 50% off</p>
+        
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-image">
+        <img class="cursor"  onclick="DetaSort(ele='eyewear')" src="https://www.netmeds.com/images/category/v1/547/thumb/hair_care_200.jpg" class="product-thumb" alt="">
+    </div>
+    <div class="product-info">
+        <h2 class="product-brand">Hair Care
+        </h2>
+        <p class="product-short-description">Flat 50% off</p>
+        
+    </div>
+  </div>
+          
+      </div>
+  </section>
+  </div>
+
+   <!-- end -->
+
+   <!-- Best in Beauty -->
+   <div id="sliderpart">
+    <section class="product"> 
+      <h2 class="product-category">Best in Beauty</h2>
+      <button class="pre-btn"><img src="https://raw.githubusercontent.com/thisbeben/Hiking-Website/main/arrow.png" alt=""></button>
+      <button class="nxt-btn"><img src="https://raw.githubusercontent.com/thisbeben/Hiking-Website/main/arrow.png" alt=""></button>
+      <div class="product-container">
+          <div class="product-card">
+              <div class="product-image">
+                  <img class="cursor"  onclick="DetaSort(ele='eyewear')" src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/maybelline.jpg" class="product-thumb" alt="">
+              </div>
+              <div class="product-info">
+                  <h2 class="product-brand">Maybelline</h2>
+                  <p class="product-short-description">Flat 50% off</p>
+                  
+              </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+                <img class="cursor"  onclick="DetaSort(ele='eyewear')" src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/garnier.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Garnier</h2>
+                <p class="product-short-description">Flat 50% off</p>
+                
+            </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+              <img class="cursor"  onclick="DetaSort(ele='eyewear')" src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/myglamm.jpg" class="product-thumb" alt="">
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">Myglamm</h2>
+              <p class="product-short-description">Flat 50% off</p>
+              
+          </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+            <img class="cursor"  onclick="DetaSort(ele='eyewear')" src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/myglamm.jpg" class="product-thumb" alt="">
+        </div>
+        <div class="product-info">
+            <h2 class="product-brand">Color Bar</h2>
+            <p class="product-short-description">Flat 50% off</p>
+            
+        </div>
+    </div>
+    <div class="product-card">
+      <div class="product-image">
+          <img class="cursor"  onclick="DetaSort(ele='eyewear')" src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/plum.jpg" class="product-thumb" alt="">
+      </div>
+      <div class="product-info">
+          <h2 class="product-brand">Color Bar</h2>
+          <p class="product-short-description">Flat 50% off</p>
+          
+      </div>
+  </div>
+  <div class="product-card">
+    <div class="product-image">
+        <img class="cursor"  onclick="DetaSort(ele='eyewear')" src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/plum.jpg" class="product-thumb" alt="">
+    </div>
+    <div class="product-info">
+        <h2 class="product-brand">Plum</h2>
+        <p class="product-short-description">Flat 50% off</p>
+        
+    </div>
+  </div>
+          
+      </div>
+  </section>
+  </div>
+
+   <!-- end -->
+
+   <!-- Personal Care -->
+   <div id="sliderpart">
+    <section class="product"> 
+      <h2 class="product-category">Personal Care</h2>
+      <button class="pre-btn"><img src="https://raw.githubusercontent.com/thisbeben/Hiking-Website/main/arrow.png" alt=""></button>
+      <button class="nxt-btn"><img src="https://raw.githubusercontent.com/thisbeben/Hiking-Website/main/arrow.png" alt=""></button>
+      <div class="product-container">
+          <div class="product-card">
+              <div class="product-image">
+                  <img class="cursor" onclick="DetaSort(ele='sexual')" src="https://www.netmeds.com/images/category/v1/525/thumb/body_care_200.jpg" class="product-thumb" alt="">
+              </div>
+              <div class="product-info">
+                  <h2 class="product-brand">Bodycare</h2>
+                  <p class="product-short-description">Flat 50% off</p>
+                  
+              </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+                <img class="cursor" onclick="DetaSort(ele='sexual')" src="https://www.netmeds.com/images/category/v1/3085/thumb/mom_baby_0.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Boby Care</h2>
+                <p class="product-short-description">Flat 50% off</p>
+                
+            </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+              <img class="cursor" onclick="DetaSort(ele='sexual')" src="https://www.netmeds.com/images/category/653/thumb/skin_treatment.jpg" class="product-thumb" alt="">
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">Skin Treatments</h2>
+              <p class="product-short-description">Flat 50% off</p>
+              
+          </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+            <img class="cursor" onclick="DetaSort(ele='sexual')" src="https://www.netmeds.com/images/category/3495/thumb/face-wash-cleansers_1.jpg" class="product-thumb" alt="">
+        </div>
+        <div class="product-info">
+            <h2 class="product-brand">Face Wash & Cleansers</h2>
+            <p class="product-short-description">Flat 50% off</p>
+            
+        </div>
+    </div>
+    <div class="product-card">
+      <div class="product-image">
+          <img class="cursor" onclick="DetaSort(ele='sexual')" src="https://www.netmeds.com/images/category/v1/3566/thumb/shower_gels_body_wash.jpg" class="product-thumb" alt="">
+      </div>
+      <div class="product-info">
+          <h2 class="product-brand">Shower Gels & Body Wash</h2>
+          <p class="product-short-description">Flat 50% off</p>
+          
+      </div>
+  </div>       
+      </div>
+  </section>
+  </div>
+
+   <!-- end -->
+
+   <!-- Men's Grooming -->
+   <div id="sliderpart">
+    <section class="product"> 
+      <h2 class="product-category">Men's Grooming</h2>
+      <button class="pre-btn"><img src="https://raw.githubusercontent.com/thisbeben/Hiking-Website/main/arrow.png" alt=""></button>
+      <button class="nxt-btn"><img src="https://raw.githubusercontent.com/thisbeben/Hiking-Website/main/arrow.png" alt=""></button>
+      <div class="product-container">
+          <div class="product-card">
+              <div class="product-image">
+                  <img class="cursor" onclick="DetaSort(ele='fitness')" src="https://www.netmeds.com/images/category/v1/3420/thumb/shaving_200.jpg?v=1" class="product-thumb" alt="">
+              </div>
+              <div class="product-info">
+                  <h2 class="product-brand">Shaving</h2>
+                  <p class="product-short-description">Flat 50% off</p>
+                  
+              </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+                <img class="cursor" onclick="DetaSort(ele='fitness')" src="https://www.netmeds.com/images/category/v1/3002/thumb/razors_cartridges_0.jpg?v=1" class="product-thumb" alt="">
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Razors & Cartridges</h2>
+                <p class="product-short-description">Flat 50% off</p>
+                
+            </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+              <img class="cursor" onclick="DetaSort(ele='fitness')" src="https://www.netmeds.com/images/category/v1/3591/thumb/beard_oil_200.jpg?v=1" class="product-thumb" alt="">
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">Beard Oil</h2>
+              <p class="product-short-description">Flat 50% off</p>
+              
+          </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+            <img class="cursor" onclick="DetaSort(ele='fitness')" src="https://www.netmeds.com/images/category/v1/3593/thumb/beard_wash_0.jpg?v=1" class="product-thumb" alt="">
+        </div>
+        <div class="product-info">
+            <h2 class="product-brand">Beard Wash</h2>
+            <p class="product-short-description">Flat 50% off</p>
+            
+        </div>
+    </div>
+    <div class="product-card">
+      <div class="product-image">
+          <img class="cursor" onclick="DetaSort(ele='fitness')" src="https://www.netmeds.com/images/category/v1/3704/thumb/hair_gels_waxes_200.jpg?v=1" class="product-thumb" alt="">
+      </div>
+      <div class="product-info">
+          <h2 class="product-brand">Hair Gels & Waxes</h2>
+          <p class="product-short-description">Flat 50% off</p>
+          
+      </div>
+  </div>
+          
+      </div>
+  </section>
+</div>
+
+   <!-- end -->
+
+
+   <!-- Get medicine refill every month -->
+   <div class="netmeds-mem">
+    <div><img src="https://cdn3.vectorstock.com/i/1000x1000/35/52/placeholder-rgb-color-icon-vector-32173552.jpg" alt=""></div>
+    <div>
+        <h1>Get medicine refill every month</h1>
+        <li>Subscribe and schedule next deliveries</li>
+        <li>Subscribe for 12 months and get the last month free. *T&C Apply</li>
+    </div>
+    <div>
+        <button>My Order</button>
+    </div>
+    </div>
+
+   <!-- end -->
+
+
+   <!-- Health Concerns -->
+   <div id="sliderpart">
+    <section class="product"> 
+      <h2 class="product-category">Health Concerns</h2>
+      <button class="pre-btn"><img src="https://raw.githubusercontent.com/thisbeben/Hiking-Website/main/arrow.png" alt=""></button>
+      <button class="nxt-btn"><img src="https://raw.githubusercontent.com/thisbeben/Hiking-Website/main/arrow.png" alt=""></button>
+      <div class="product-container">
+          <div class="product-card">
+              <div class="helath-image">
+                  <img class="cursor" onclick="DetaSort(ele='surgicals')" class="cursor"  onclick="DetaSort(ele='diabetes')" class="Healthimg" src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/diabetic-care.jpg?v=1" class="product-thumb" alt="">
+              </div>
+              <div class="product-info">
+                  <h2 class="text"  class="product-brand">Diabetic Care</h2>
+                  <!-- <p class="product-short-description">Flat 50% off</p> -->
+                  
+              </div>
+          </div>
+          <div class="product-card">
+            <div class="helath-image">
+                <img class="cursor" onclick="DetaSort(ele='surgicals')" class="cursor"  onclick="DetaSort(ele='diabetes')" class="Healthimg" src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/de-addiction.jpg?v=1" class="product-thumb" alt="">
+            </div>
+            <div class="product-info">
+                <h2 class="text" class="product-brand">De-Addiction</h2>
+                <!-- <p class="product-short-description">Flat 50% off</p> -->
+                
+            </div>
+        </div>
+        <div class="product-card">
+          <div class="helath-image">
+              <img class="cursor" onclick="DetaSort(ele='surgicals')" class="cursor"  onclick="DetaSort(ele='diabetes')" class="Healthimg" src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/lung-care.jpg?v=1" class="product-thumb" alt="">
+          </div>
+          <div class="product-info">
+              <h2 class="text"  class="product-brand">Lung-care</h2>
+              <!-- <p class="product-short-description">Flat 50% off</p> -->
+              
+          </div>
+      </div>
+      <div class="product-card">
+        <div class="helath-image">
+            <img  class="cursor"  onclick="DetaSort(ele='diabetes')" class="Healthimg" src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/weight-care.jpg?v=1" class="product-thumb" alt="">
+        </div>
+        <div class="product-info">
+            <h2 class="text" class="product-brand">Wait-Care</h2>
+            <!-- <p class="product-short-description">Flat 50% off</p> -->
+            
+        </div>
+    </div>
+    <div class="product-card">
+      <div class="helath-image">
+          <img class="cursor"  onclick="DetaSort(ele='diabetes')" class="Healthimg" src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/women-s-care.jpg?v=1" class="product-thumb" alt="">
+      </div>
+      <div class="product-info">
+          <h2 class="text"  class="product-brand">Womens-Care</h2>
+          <!-- <p class="product-short-description">Flat 50% off</p> -->
+          
+      </div>
+  </div>
+  <div class="product-card">
+    <div class="helath-image">
+        <img class="cursor"  onclick="DetaSort(ele='diabetes')" class="Healthimg" src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/bone-and-joint-pain.jpg?v=1" class="product-thumb" alt="">
+    </div>
+    <div class="product-info">
+        <h2 class="text"  class="product-brand">Bone And Joint Pain</h2>
+        <!-- <p class="product-short-description">Flat 50% off</p> -->
+        
+    </div>
+  </div>
+          
+      </div>
+  </section>
+  </div>
+
+   <!-- end -->
+
+
+   <!-- Health Advice Articles -->
+   <div id="sliderpart">
+    <section class="product"> 
+      <h2 class="product-category">Health Advice Articles</h2>
+      <button class="pre-btn"><img src="https://raw.githubusercontent.com/thisbeben/Hiking-Website/main/arrow.png" alt=""></button>
+      <button class="nxt-btn"><img src="https://raw.githubusercontent.com/thisbeben/Hiking-Website/main/arrow.png" alt=""></button>
+      <div class="product-container">
+          <div class="health-card">
+              <div class="Advice-image">
+                  <img class="cursor" onclick="DetaSort(ele='surgicals')" src="https://www.netmeds.com/images/cms/magefan_blog/nmslite/1645608872_TSH_features_480.jpg" class="advice-thumb" alt="">
+                  <h4>Goat's Rule; 5 Stupendies Health Benfit of This..</h4>
+              </div>
+              
+          </div>
+          <div class="health-card">
+            <div class="Advice-image">
+                <img class="cursor" onclick="DetaSort(ele='surgicals')" src="https://www.netmeds.com/images/cms/magefan_blog/nmslite/1645608797_5-Superb-Foods-480.jpg" class="advice-thumb" alt="">
+                <h4>Goat's Rule; 5 Stupendies Health Benfit of This..</h4>
+            </div>
+            
+        </div>
+        <div class="health-card">
+            <div class="Advice-image">
+                <img class="cursor" onclick="DetaSort(ele='surgicals')" src="https://www.netmeds.com/images/cms/magefan_blog/nmslite/1645608716_Tonometry_features_480.jpg" class="advice-thumb" alt="">
+                <h4>Goat's Rule; 5 Stupendies Health Benfit of This..</h4>
+            </div>
+            
+        </div>
+        <div class="health-card">
+            <div class="Advice-image">
+                <img class="cursor" onclick="DetaSort(ele='surgicals')"src="https://www.netmeds.com/images/cms/magefan_blog/nmslite/1597389028_coriander_features_480.jpg" class="advice-thumb" alt="">
+                <h4>Goat's Rule; 5 Stupendies Health Benfit of This..</h4>
+            </div>
+            
+        </div>
+        <div class="health-card">
+            <div class="Advice-image">
+                <img class="cursor" onclick="DetaSort(ele='surgicals')" src="https://www.netmeds.com/images/cms/magefan_blog/nmslite/1645515280_carota_features_480.jpg" class="advice-thumb" alt="">
+                <h4>Goat's Rule; 5 Stupendies Health Benfit of This..</h4>
+            </div>
+            
+        </div>
+
+  </div>
+    </section>   
+</div>
+   <!-- end -->
+
+   <div id="text-content">
+       <div>
+           <p><span>Wellness Products:</span>  Dabur Shilajit Gold Capsule 20's | Dabur Chyawanprash Awaleha 500 gm | Pankajakasthuri Breathe Easy Granules 400 gm | Nestle Peptamen Peptide Based Diet Powder - Vanilla Flavour 400 gm (Tin) | Pentasure 2.0 Vanilla Powder 1 kg | Scalpe Plus Anti Dandruff Shampoo 75 ml | Nestle Nan Excella Pro 1 (Upto 6 Months) Powder 400 gm (Refill Pack) | Accu-Chek Active Test Strips 50's | D Protin Chocolate Powder 500 gm | Climax Spray for Men 12 gm
+            Top-Selling Health Packages: AAROGYAM C | Netmed Health Pack | Aarogyam 1.3 | Netmeds Swasthya | Diabetic Checkup | Aarogyam 1.7 | Basic Allergy Package | Aarogyam X | Advance Heart Care | Netmeds Swasthya Plus
+            Top-Selling Lab Tests: Complete Blood Count (CBC)/Complete Hemogram | LIVER FUNCTION TEST | Blood Glucose Fasting (FBS) | THYROID PROFILE -TOTAL(T3,T4&TSH) | Fever Profile | Urine Routine & Microscopy | Hemoglobin A1C (HbA1c) | 25-OH Vitamin D (TOTAL)/Vitamin D Total 25 Hydroxy | Uric Acid | Maternal screen-1st Trimester Dual Marker test
+            Top-Selling Radiology Tests: Ultrasound Whole Abdomen | MRI Scan Brain | CT Scan Brain | ECHO | X Ray Chest PA View | PET Scan | ECG | Ultrasound Pelvis | 3T MRI Scan Brain | CT Scan Chest
+            Most Viewed Health Articles:Chandraprabha Vati - Uses, Functions And Therapeutic Benefits | Amla: Benefits, Uses For Hair and Health Conditions, Supplements And Recipes | Amazing Benefits Of Chyawanprash For Bolstering Immunity And Vitality | Arogyavardhini Vati - Uses, Functions And Therapeutic Benefits | Amazing Benefits Of Betel Leaves Nobody Told You</p>
+      <h1>Welcome to Netmeds.com! India's Leading Online Pharmacy!</h1>
+            <p>With a dynamic legacy of over 100 years in the pharma business, it comes as no surprise that Netmeds.com is the first choice of over 4 million+ satisfied customers when it comes to an online pharmacy in India. Netmeds.com has a pan India presence as we deliver health care essentials to every state in the country. We take your health seriously at Netmeds.com. Be it purchasing medicines online, lab tests or online doctor consultations, we've got it all covered for our customers!</p>
+       <h1>Take the Worry Out of Buying Medicines! Purchase Medicines Online Anytime, Anywhere!</h1>
+       <p>Get everything you need at Netmeds.com to take care of your health right from high-quality, affordable, authentic prescription medicines, Over-The-Counter pharmaceuticals products to general health care products, Ayurveda, Unani and Homeopathy medicines.
+
+        Buy medicines online at Netmeds.com from the comfort of your home and we will take care of the rest! We will ensure that the life-saving drugs reach your doorstep without a hitch. Do away with the hassle of driving to the medical store, waiting in line, or even remembering your refills! Netmed.com will sort out those problems for you effectively so that you can lead a healthy and full life!
+        
+        Ordering medicines online at Netmeds.com is just a simple 4 step process. Browse through our wide range of health care products, add them to your cart, uploading your prescription (if required) and proceed to checkout!
+        
+        With Netmed.com, rest assured that your health will be in safe hands!</p>
+       <h1>Buying medicines online</h1>
+       <p>At Netmeds.com, we ensure that you get high-quality life-saving medicines are delivered to you on time. Order medicines online at your convenience from across the country. We also deliver Ayurvedic, Homeopathic, Unani and Over-The-Counter (OTC) products to over 19,000 pin codes across the country!</p>
+       <h1>Medicine Subscription</h1>
+       <p>Remembering to refilling medicines month on month to address chronic conditions can be a hassle. Netmeds' subscription service will ensure that you never run out of these vital medicines. Just set it up and your medicines will get refilled and delivered automatically every month to your doorstep!</p>
+       <h1>Netmeds First</h1>
+       <p>Netmeds First is our loyalty programme which puts you and your health First! First members can get an extra 2.5% NMS Cashback (up to INR 100 per order) on prescription medication ordered using the membership. Members are also eligible for free delivery, priority processing, and free online doctor consultations!</p>
+       <h1>Diagnostics</h1>
+       <p>Are the long queues at hospitals and clinics putting you off? At Netmeds.com, we realize that your time and health are precious. Consult with top-notch doctors online 24/7 at your convenience through our online doctor consultation service!</p>
+       <h1>Online Doctor Consultation</h1>
+       <p>Do you find yourself constantly putting off getting your lab tests done because it's inconvenient to schedule them or because they are expensive? Visit Netmed.com to book lab tests and health checkup packages online from well-reputed, certified diagnostic labs according to your convenience and at affordable rates. We will also make your lab reports available online for easy access.</p>
+       <h1>Why Choose Netmeds?</h1>
+       <p>100+ years of experience in the pharma sector
+        Vital medicines delivered across the country
+        Trust of more than 4 million+ loyal customers
+        Our team is made up of highly experienced pharmacists & healthcare professionals
+        A wide array of healthcare services available for your convenience
+        We stock only genuine medicines & healthcare products</p>
+       <h1>Our Awards and Recognition</h1>
+       <p>We at Netmeds.com know how crucial medicine is to treating health conditions and we are extremely proud to be at the forefront of the online medicine industry. Netmeds.com offers its customers a reliable online pharmacy service and as a testament to our commitment, we are regularly recognized and honoured with awards. We are pleased to highlight some of our awards here and we aim to continue adding more feathers to our cap!
+
+        We have bagged the 'Health Tech Start-Up of the Year' at the NDTV Unicorn Awards 2016. We are also proud that we have been selected as Asia's Most Promising Brand 2018' by Int+ WCRC International.
+        
+        We have been named as the 'Best Digital Healthcare Start-up' by ET Now World Health and Wellness Congress in 2019. We were also recognized by ET Now World Health and Wellness Congress as the 'Digital Healthcare Company of the year' in 2019.</p>
+        </div>
+   </div>
+   <div id="footer">
+    <div>
+        <div>
+            <img class="cursor"  src="https://github.com/Ujjwalmittal03/LOGO.git" alt="logo"/>
+        </div>
+        <div>
+            <p>EMEDS.com</p>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h1 class="cursor" >COMPANY</h1>
+            <p class="cursor" >About EMEDS</p>
+            <p class="cursor" >Customers Speak</p>
+            <p class="cursor" >In the News</p>
+            <p class="cursor" >Career</p>
+            <p class="cursor" >Terms and Conditions</p>
+            <p class="cursor" >Privacy Policy</p>
+            <p class="cursor" >Fees and Payments Policy</p>
+            <p class="cursor" >Shipping and Delivery Policy</p>
+            <p class="cursor" >Return, Refund and Cancellation Policy</p>
+            <p class="cursor" >Contact</p>
+        </div>
+        <div>
+            <h1 class="cursor" >SHOPPING</h1>
+            <p class="cursor" >Browse by A-Z</p>
+            <p class="cursor" >Browse by Manufacturers</p>
+            <p class="cursor" >Health Articles</p>
+            <p class="cursor" >Offers / Coupons</p>
+            <p class="cursor" >FAQs</p>
+        </div>
+        <div>
+            <h1 class="cursor" >SOCIAL</h1>
+            <p class="cursor" >Patients Alike</p>
+            <p class="cursor" >Facebook</p>
+            <p class="cursor" >Twitter</p>
+            <p class="cursor" >LinkedIn</p>
+            <p class="cursor" >Youtube</p>
+            <p class="cursor" >Refer & Earn</p>
+        </div>
+        <div>
+            <h1>SUBSCRIBE TO OUR NEWSLETTER</h1>
+            <p>Get a free subscription to our health and fitness tip and stay tuned to our latest offers</p>
+            <input type="email" placeholder="Enter your email">
+            <!-- <div>
+                <img class="cursor"  src="https://www.netmeds.com/assets/gloryweb/images/icons/play_store.png" alt="play_store">
+                <img class="cursor" src="https://www.netmeds.com/assets/gloryweb/images/icons/app_store.png" alt="I-store">
+            </div> -->
+        </div>
+    </div>
+    <div>
+    <p class="cursor" >Medicine</p>
+    <p class="cursor" >Wellness</p>
+    <p class="cursor" >Lab Tests</p>
+    <p class="cursor" >Beauty</p>
+    <p class="cursor" >Copyright© 2022. All Rights Reserved.</p>
+    </div>
+   </div>
+</body>
+</html>
+<script src="./script/index.js"></script>
+<script src="./script/detabase.js"></script>
+<script src="./product/fetchdeta.js"></script>
+<script src="./onpage.js"></script>
